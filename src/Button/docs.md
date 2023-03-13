@@ -1,3 +1,7 @@
+<script setup>
+  import Button from './Button.vue';
+</script>
+
 # Button
 
 This is the documentation page for the awesome `<Button />` component.
@@ -9,17 +13,19 @@ This is the documentation page for the awesome `<Button />` component.
   <Button
     :type="'outlined'"
     :size="'sm'"
+    :icon="'notifications-without-bubble'"
+    :icon-pos="'left'"
   >
      My Button
   </Button>
 </template>
 ```
 
-## Example
+<Button type="outlined" size="sm" icon="notifications-without-bubble" icon-pos="left">
+    My Button
+</Button>
 
-<script setup>
-  import Button from './Button.vue';
-</script>
+## Example
 
 ### Types
 <div class="flex flex-row gap-2">
@@ -69,7 +75,9 @@ API defines helper props, events and others for the Button module.
 ### Props
 Defines valid properties in Button component.
 
-| Name | Type                            | Default   | Description |
-|------|---------------------------------|-----------|-------------|
-| type | "default" / "outlined" / "text" | "default" | Title       |
-| size | "sm" / "md" / "lg"              | "sm"      | Text        |
+| Name     | Type                            | Default   | Description |
+|----------|---------------------------------|-----------|-------------|
+| type     | "default" / "outlined" / "text" | "default" | Title       |
+| size     | "sm" / "md" / "lg"              | "sm"      | Text        |
+| icon     | a valid icon name               | ""        | Text        |
+| icon-pos | "left" / "right"                | "right"   | Text        |
