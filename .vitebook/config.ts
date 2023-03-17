@@ -4,6 +4,7 @@ import { vuePlugin } from '@vitebook/vue/node';
 import { defaultThemePlugin, DefaultThemeConfig } from '@vitebook/theme-default/node';
 
 export default defineConfig<DefaultThemeConfig>({
+  outDir: '../docs',
   include: ['src/**/*.md', 'src/**/*.story.vue'],
   plugins: [
     vueMarkdownPlugin(),
