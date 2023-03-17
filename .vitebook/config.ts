@@ -15,7 +15,6 @@ export default defineConfig<DefaultThemeConfig>({
   site: {
     title: 'Db Ui Test',
     description: '',
-    baseUrl: '/db-ui-test',
     theme: {
       darkMode: {
         enabled: false,
