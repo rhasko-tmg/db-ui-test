@@ -101,19 +101,19 @@ function setButtonType(type: BUTTON_TYPE) {
 
         <div class="grid grid-cols-3 gap-2 w-full max-w-screen-sm">
           <div>
-            <input class="hidden peer" id="radio_size-sm" type="radio" name="radio" checked :value="SIZE_TYPE.SM" v-model="sizeType">
+            <input class="hidden peer" id="radio_size-sm" type="radio" name="size-radio" checked :value="SIZE_TYPE.SM" v-model="sizeType">
             <label class="flex flex-col p-2 cursor-pointer bg-secondary text-white font-bold text-center peer-checked:bg-primary" for="radio_size-sm">
               Small
             </label>
           </div>
           <div>
-            <input class="hidden peer" id="radio_size-md" type="radio" name="radio" :value="SIZE_TYPE.MD" v-model="sizeType">
+            <input class="hidden peer" id="radio_size-md" type="radio" name="size-radio" :value="SIZE_TYPE.MD" v-model="sizeType">
             <label class="flex flex-col p-2 cursor-pointer bg-secondary text-white font-bold text-center peer-checked:bg-primary" for="radio_size-md">
               Medium
             </label>
           </div>
           <div>
-            <input class="hidden peer" id="radio_size-lg" type="radio" name="radio" :value="SIZE_TYPE.LG" v-model="sizeType">
+            <input class="hidden peer" id="radio_size-lg" type="radio" name="size-radio" :value="SIZE_TYPE.LG" v-model="sizeType">
             <label class="flex flex-col p-2 cursor-pointer bg-secondary text-white font-bold text-center peer-checked:bg-primary" for="radio_size-lg">
               Large
             </label>
@@ -137,7 +137,7 @@ function setButtonType(type: BUTTON_TYPE) {
 
         <div class="grid grid-cols-2 gap-2 w-full max-w-screen-sm">
           <div>
-            <input class="hidden peer" id="radio_position-left" type="radio" name="radio" checked :value="'left'" v-model="iconPosition" :disabled="!enableIcon">
+            <input class="hidden peer" id="radio_position-left" type="radio" name="icon-radio" checked :value="'left'" v-model="iconPosition" :disabled="!enableIcon">
             <label :class="enableIcon
             ? 'flex flex-col p-2 cursor-pointer bg-secondary text-white font-bold text-center peer-checked:bg-primary'
             : 'flex flex-col p-2 cursor-default bg-silver text-secondary font-bold text-center'" for="radio_position-left">
@@ -145,7 +145,7 @@ function setButtonType(type: BUTTON_TYPE) {
             </label>
           </div>
           <div>
-            <input class="hidden peer" id="radio_position-right" type="radio" name="radio" :value="'right'" v-model="iconPosition" :disabled="!enableIcon">
+            <input class="hidden peer" id="radio_position-right" type="radio" name="icon-radio" :value="'right'" v-model="iconPosition" :disabled="!enableIcon">
             <label :class="enableIcon
             ? 'flex flex-col p-2 cursor-pointer bg-secondary text-white font-bold text-center peer-checked:bg-primary'
             : 'flex flex-col p-2 cursor-default bg-silver text-secondary font-bold text-center'" for="radio_position-right">
